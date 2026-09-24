@@ -12,15 +12,17 @@
 </head>
 <body>
 <h1>Warmer — Privacy Policy</h1>
-<p><em>Last updated: 8 August 2026</em></p>
+<p><em>Last updated: 29 August 2026</em></p>
 
-<p>Warmer is an offline word-guessing game for Android developed by Lyudmil Stamenov
+<p>Warmer is a word-guessing game for Android developed by Lyudmil Stamenov
 ("we", "us"). This policy explains what data the app handles and with whom it is shared.</p>
 
-<h2>No accounts, no personal profiles</h2>
-<p>Warmer does not require an account. We do not collect your name, email address,
-contacts, or location. All gameplay data (guesses, results, achievements, streaks,
-spark balance) is stored only on your device and is deleted when you uninstall the app.</p>
+<h2>No accounts</h2>
+<p>Warmer does not require an account and we never ask for your name, email address, or
+contacts. All gameplay data (guesses, results, achievements, streaks, spark balance) is
+stored only on your device and is deleted when you uninstall the app. If you use the
+optional leaderboards, a small amount of data is shared as described in "Leaderboards"
+below, including your approximate location at country level.</p>
 
 <h2>Third-party services</h2>
 <p>The app uses the following Google services, which may collect data as described in the
@@ -39,7 +41,38 @@ spark balance) is stored only on your device and is deleted when you uninstall t
   tied to your identity.</li>
   <li><strong>Firebase Analytics</strong> — may collect anonymous usage and diagnostic
   events (such as puzzles played and crashes) to help us improve the game.</li>
+  <li><strong>Firebase Firestore, Firebase Authentication (anonymous) and Firebase App
+  Check</strong> — power the optional leaderboards. When leaderboards are enabled the app
+  signs in anonymously (a random identifier, not linked to your identity), verifies the
+  install with Google Play Integrity, and stores one leaderboard record for you in
+  Firestore. See "Leaderboards" below.</li>
 </ul>
+
+<h2>Leaderboards</h2>
+<p>Leaderboards are optional. While they are enabled, the app publishes a single record
+for you to a ranking that is <strong>visible to all players</strong>. That record
+contains:</p>
+<ul>
+  <li>your <strong>weekly score</strong> ("Embers");</li>
+  <li>your <strong>country</strong>, derived from your mobile network or SIM, or from your
+  device language — never from GPS or precise location;</li>
+  <li>a <strong>name</strong>: your Google Play Games display name, or a randomly generated
+  handle (for example "Ember-4821") if you are not signed in to Play Games or you turn off
+  "Show my Play Games name";</li>
+  <li>a random anonymous identifier and a technical Play Integrity token used only to keep
+  out fake or tampered clients.</li>
+</ul>
+<p>The record is stored with Google Firebase (Firestore) and refreshed as you play. A
+record that is not updated for about four months is deleted automatically.</p>
+<p>You are in control in the app's Settings:</p>
+<ul>
+  <li><strong>Appear on leaderboards</strong> — turn this off and your record is deleted
+  and nothing further is submitted, anywhere, until you turn it back on;</li>
+  <li><strong>Show my Play Games name</strong> — turn this off to compete under the random
+  handle instead of your Play Games name.</li>
+</ul>
+<p>Achievements and leaderboard scores are also shared with Google Play Games Services and
+shown in your Play Games profile.</p>
 
 <h2>International data transfers</h2>
 <p>The services listed above are operated by Google and may process data outside your
@@ -62,11 +95,15 @@ information from children.</p>
   <li>Uninstalling the app immediately and permanently deletes all data stored on your
   device — gameplay history, guesses, achievements, streaks, and spark balance. No
   further action is needed for this data; nothing is retained on any server.</li>
-  <li>For the limited third-party data described below (advertising/analytics identifiers),
-  email <strong><a href="mailto:lyudmil.stamenov@gmail.com">lyudmil.stamenov@gmail.com</a></strong>
-  with the subject line "Warmer data deletion request". Include the approximate date you
-  used the app so we can locate the relevant records. We will process the request within
-  30 days and confirm by email once complete.</li>
+  <li><strong>Leaderboard data</strong> can be deleted by you at any time, in the app:
+  Settings &rarr; turn off "Appear on leaderboards". This deletes your leaderboard record
+  and stops any further submission.</li>
+  <li>For the limited third-party data described below (advertising/analytics identifiers,
+  or any leaderboard record you cannot remove yourself), email
+  <strong><a href="mailto:lyudmil.mlb@gmail.com">lyudmil.mlb@gmail.com</a></strong>
+  with the subject line "Warmer data deletion request". If it concerns analytics, include
+  the analytics ID shown in Settings &rarr; "Request analytics data deletion". We will
+  process the request within 30 days and confirm by email once complete.</li>
 </ol>
 
 <h3>What is deleted and what is retained</h3>
@@ -80,6 +117,10 @@ information from children.</p>
   email, or any personal identity): deleted upon request as described above; our
   configured analytics retention period otherwise applies (2 months) before automatic
   deletion.</li>
+  <li><strong>Leaderboard record</strong> (weekly score, country, name/handle, anonymous
+  identifier, stored in Firebase Firestore): deleted immediately when you turn off
+  "Appear on leaderboards" in Settings, or on request; a record left untouched is also
+  deleted automatically after about four months.</li>
   <li><strong>Purchase records</strong> for in-app purchases are held by Google Play
   Billing under Google's own retention policy, not by us — see the
   <a href="https://policies.google.com/privacy">Google Privacy Policy</a> to request
